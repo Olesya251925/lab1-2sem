@@ -2,10 +2,10 @@ using System;
 using System.Reflection.Emit;
 
 namespace ConsoleApp{
-  class Program{
-    private static int choice;
+  class Counter{
+    int choice;
 
-    private static void Main(string[] args) {
+    static void Main(string[] args) {
       Console.WriteLine("Введите 1- для возведения в степень, 2- для перестановки элемента");
       int choice = int.Parse(Console.ReadLine());
       switch (choice) {
@@ -19,7 +19,7 @@ namespace ConsoleApp{
       }
     }
 
-    private static void power(){
+    static void power(){
       Console.WriteLine("Программа 1- возведение в степень");
 
       Console.WriteLine("Введите число a, которое нужно возвести:");
@@ -40,13 +40,13 @@ namespace ConsoleApp{
       Console.WriteLine("a^n = " + result);
       Console.ReadKey();
     }
-    private static void secondNum2End(){
+    static void secondNum2End(){
       Console.WriteLine("Введите последовательность x:");
 
       int x = int.Parse(Console.ReadLine());
       int workX = x;
 
-      //int x = 1654783;
+      //int x = 436123;
       do {
         workX = workX / 10;
 
@@ -65,4 +65,3 @@ namespace ConsoleApp{
     }
   }
 }
-
