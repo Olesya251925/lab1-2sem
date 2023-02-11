@@ -46,7 +46,7 @@ namespace ConsoleApp{
       int x = int.Parse(Console.ReadLine());
       int workX = x;
 
-      //int x = 436123;
+      //int x = 1654783;
       do {
         workX = workX / 10;
 
