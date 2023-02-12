@@ -22,7 +22,7 @@ namespace ConsoleApp{
     static void power(){
       Console.WriteLine("Программа 1- возведение в степень");
 
-      Console.WriteLine("Введите число a, которое нужно возвести:");
+      Console.WriteLine("Введите число a, которое нужно возвести в степень:");
       int a = int.Parse(Console.ReadLine());
       Console.WriteLine("Введите n - степень числа:");
       int n = int.Parse(Console.ReadLine());
@@ -41,24 +41,25 @@ namespace ConsoleApp{
       Console.ReadKey();
     }
     static void secondNum2End(){
+      Console.WriteLine("Программа 2- перестановка второго элемента в конец");
       Console.WriteLine("Введите последовательность x:");
 
       int x = int.Parse(Console.ReadLine());
-      int workX = x;
+      int ConvertedX = x;
 
       do {
-        workX = workX / 10;
+        ConvertedX = ConvertedX / 10;
 
-        if (workX < 100){
+        if (ConvertedX < 100){
           do {
-            workX = workX - 10;
+            ConvertedX = ConvertedX - 10;
           }
-          while (workX > 10);
+          while (ConvertedX > 10);
         }
       }
-      while (workX > 100);
+      while (ConvertedX > 100);
 
-      int n = int.Parse(x.ToString().Remove(1, 1) + workX); // Перестановка второй цифры в конец числа
+      int n = int.Parse(x.ToString().Remove(1, 1) + ConvertedX); // Перестановка второй цифры в конец числа
 
       Console.WriteLine("Результат: " + n); // Вывод результат
     }
