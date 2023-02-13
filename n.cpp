@@ -3,12 +3,12 @@ using System.Reflection.Emit;
 
 namespace ConsoleApp{
   class Counter{
-    int choice;
+    int Choice;
 
     static void Main(string[] args) {
       Console.WriteLine("Введите 1- для возведения в степень, 2- для перестановки элемента");
-      int choice = int.Parse(Console.ReadLine());
-      switch (choice) {
+      int Choice = int.Parse(Console.ReadLine());
+      switch (Choice) {
         case 1:
         power();
         break;
