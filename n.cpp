@@ -34,13 +34,13 @@ namespace ConsoleApp{
         Console.WriteLine("Ошибка. Число не является действительным числом.");
         Environment.Exit(0); //Досрочное прерывание программы
       }
-      double result = 1; // Результат возведения Number в степень Degree
+      double Result = 1; // Результат возведения Number в степень Degree
 
       for (int IndexNumber = 0; IndexNumber < Degree; ++IndexNumber){
-        result *= Number;// Используем цикл для умножения result на Number Degree раз 
+        Result *= Number;// Используем цикл для умножения Result на Number Degree раз 
       }
 
-      Console.WriteLine("Number^Degree = " + result);
+      Console.WriteLine("Number^Degree = " + Result);
       Console.ReadKey();
     }
     static void SecondNum(){
