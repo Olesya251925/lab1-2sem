@@ -22,19 +22,19 @@ namespace ConsoleApp{
     static void power(){
       Console.WriteLine("Программа 1- возведение в степень");
 
-      Console.WriteLine("Введите число a, которое нужно возвести в степень:");
-      int a = int.Parse(Console.ReadLine());
+      Console.WriteLine("Введите число, которое нужно возвести в степень:");
+      int Number = int.Parse(Console.ReadLine());
       Console.WriteLine("Введите n - степень числа:");
       int n = int.Parse(Console.ReadLine());
 
-      if (a < 1){
-        Console.WriteLine("Ошибка. Число а не является действительным числом.");
+      if (Number < 1){
+        Console.WriteLine("Ошибка. Число не является действительным числом.");
         Environment.Exit(0); //Досрочное прерывание программы
       }
       double result = 1; // Результат возведения a в степень n
 
       for (int index = 0; index < n; ++index){
-        result *= a;// Используем цикл для умножения result на a n раз 
+        result *= Number;// Используем цикл для умножения result на a n раз 
       }
 
       Console.WriteLine("a^n = " + result);
