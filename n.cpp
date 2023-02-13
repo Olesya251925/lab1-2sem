@@ -42,10 +42,10 @@ namespace ConsoleApp{
     }
     static void secondNum(){
       Console.WriteLine("Программа 2- перестановка второго элемента в конец");
-      Console.WriteLine("Введите последовательность x:");
+      Console.WriteLine("Введите последовательность, которую нужно переобразовать:");
 
-      int x = int.Parse(Console.ReadLine());
-      int ConvertedX = x;
+      int UneducatedX = int.Parse(Console.ReadLine());
+      int ConvertedX = UneducatedX ;
 
       do {
         ConvertedX = ConvertedX / 10;
@@ -59,7 +59,7 @@ namespace ConsoleApp{
       }
       while (ConvertedX > 100);
 
-      int Degree = int.Parse(x.ToString().Remove(1, 1) + ConvertedX); // Перестановка второй цифры в конец числа
+      int Degree = int.Parse(UneducatedX.ToString().Remove(1, 1) + ConvertedX); // Перестановка второй цифры в конец числа
 
       Console.WriteLine("Результат: " + Degree); // Вывод результат
     }
