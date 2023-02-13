@@ -24,20 +24,20 @@ namespace ConsoleApp{
 
       Console.WriteLine("Введите число, которое нужно возвести в степень:");
       int Number = int.Parse(Console.ReadLine());
-      Console.WriteLine("Введите n - степень числа:");
-      int n = int.Parse(Console.ReadLine());
+      Console.WriteLine("Введите Degree - степень числа:");
+      int Degree = int.Parse(Console.ReadLine());
 
       if (Number < 1){
         Console.WriteLine("Ошибка. Число не является действительным числом.");
         Environment.Exit(0); //Досрочное прерывание программы
       }
-      double result = 1; // Результат возведения a в степень n
+      double result = 1; // Результат возведения a в степень Degree
 
-      for (int IndexNumber = 0; IndexNumber < n; ++IndexNumber){
-        result *= Number;// Используем цикл для умножения result на a n раз 
+      for (int IndexNumber = 0; IndexNumber < Degree; ++IndexNumber){
+        result *= Number;// Используем цикл для умножения result на a Degree раз 
       }
 
-      Console.WriteLine("a^n = " + result);
+      Console.WriteLine("a^Degree = " + result);
       Console.ReadKey();
     }
     static void secondNum(){
@@ -59,9 +59,9 @@ namespace ConsoleApp{
       }
       while (ConvertedX > 100);
 
-      int n = int.Parse(x.ToString().Remove(1, 1) + ConvertedX); // Перестановка второй цифры в конец числа
+      int Degree = int.Parse(x.ToString().Remove(1, 1) + ConvertedX); // Перестановка второй цифры в конец числа
 
-      Console.WriteLine("Результат: " + n); // Вывод результат
+      Console.WriteLine("Результат: " + Degree); // Вывод результат
     }
   }
 }
