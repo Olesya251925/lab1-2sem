@@ -33,7 +33,7 @@ namespace ConsoleApp{
       }
       double result = 1; // Результат возведения a в степень n
 
-      for (int index = 0; index < n; ++index){
+      for (int IndexNumber = 0; IndexNumber < n; ++IndexNumber){
         result *= Number;// Используем цикл для умножения result на a n раз 
       }
 
