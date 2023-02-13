@@ -14,7 +14,7 @@ namespace ConsoleApp{
         break;
 
         case 2:
-        secondNum2End();
+        secondNum();
         break;
       }
     }
@@ -40,7 +40,7 @@ namespace ConsoleApp{
       Console.WriteLine("a^n = " + result);
       Console.ReadKey();
     }
-    static void secondNum2End(){
+    static void secondNum(){
       Console.WriteLine("Программа 2- перестановка второго элемента в конец");
       Console.WriteLine("Введите последовательность x:");
 
